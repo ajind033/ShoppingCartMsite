@@ -191,6 +191,7 @@ export class HomeComponent implements OnInit {
       document.getElementById("cartBody").style.visibility = "visible";
     }
     else{
+      localStorage.setItem("key","jkjkjkjlkjjklj==")
       alert("Add some Items to cart");
     }
   }

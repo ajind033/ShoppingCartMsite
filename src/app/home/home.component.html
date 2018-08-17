@@ -1,0 +1,29 @@
+<div id="bod">
+  <div class="mainBody" align="center">
+    <div class="searchbar">
+      <br/>
+      <h4>How can we help you today?</h4>
+      <input type="search" [(ngModel)]='item' (keyup)="finditem()" placeholder="Search your items here" />
+    </div>
+
+    <br/>
+    <div class="table-condensed ">
+      <table id="searchResult" class=" table-bordered" border="1"></table>
+    </div>
+    <div id="bodyButtons">
+      <button (click)="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+  <div id="cartBody" align="center">
+    <div class="mainCart">
+      <br/>
+      <h4>Your cart is here&ensp;#{{ItemsNo}}</h4>
+      <br/>
+      <table id="cartTable" class="table-condensed table-bordered" border="1"></table>
+    </div>
+    <br/>
+    <div class="cartButton">
+      <button (click)="checkMeOut()">Checkout</button>
+    </div>
+  </div>
+</div>

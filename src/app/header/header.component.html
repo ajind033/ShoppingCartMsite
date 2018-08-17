@@ -1,0 +1,9 @@
+<div class="mainHeader">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <a *ngFor="let category of categories" (click)="setCategory(category)" [id]=category>{{category}}</a>
+  </div>
+  <span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776;</span>
+  <p id ="company">Your Cart</p>
+  <br/>
+  </div>

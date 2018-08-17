@@ -136,7 +136,7 @@ export class HomeComponent implements OnInit {
     this.dataItems.forEach((dataItem) => {
       dataItem.forEach((data) => {
         if (reg.test(data.name.toLowerCase())) {
-          this.quantity[index] = document.getElementById(index.toString()).value;
+          this.quantity[index] =( document.getElementById(index.toString())  as HTMLInputElement).value;
         }
         index++;
       });
